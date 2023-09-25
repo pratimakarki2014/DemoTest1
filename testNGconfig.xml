@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LoginSuite" parallel="tests" thread-count="2">
+  <test name="LoginTestInChrome">
+   	<classes>
+    	 <class name="mavenDemo.ExOfMaven.EaappLoginTest">
+	    	 <methods>
+	    	 <include name = "VerifyIfUserCanGetAlertMessageOrNotAfterEnteringOnlyUserName"/>
+	    	 <include name = "VerifyIfUserIsAbleToInputUsernameOrNot"/>
+	    	 <include name = "VerifyIfUserIsAbleToInputPasswordOrNot"/>
+	    	 <include name = "VerifyIfUserIsAbleToClickLoginButtonOrNot"/>
+	    	 </methods>
+    	 </class>  
+    	 <parameter name="url" value="http://eaapp.somee.com"/>
+    	 <parameter name="browser" value="chrome"/>
+   	</classes>
+  </test> 
+    <test name="LoginTestInChrome2">
+   	<classes>
+    	 <class name="mavenDemo.ExOfMaven.EaappLoginTest">
+	    	 <methods>
+	    	 <include name = "VerifyIfUserCanGetAlertMessageOrNotAfterEnteringOnlyUserName"/>
+	    	 <include name = "VerifyIfUserIsAbleToInputUsernameOrNot"/>
+	    	 <include name = "VerifyIfUserIsAbleToInputPasswordOrNot"/>
+	    	 <include name = "VerifyIfUserIsAbleToClickLoginButtonOrNot"/>
+	    	 </methods>
+    	 </class>  
+    	 <parameter name="url" value="http://eaapp.somee.com"/>
+    	 <parameter name="browser" value="chrome"/>
+   	</classes>
+  </test>  
+</suite> 
